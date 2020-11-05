@@ -16,9 +16,18 @@ $btns.click(function(e){
     // sticky navigation area
     let nav_offset_top = $('.header-menu').height() + 50;
 
-    function navBarFixed(){
+    function navbarFixed(){
         if ($('.header-menu').length){
-            $(window)
+            $(window).scroll(function(){
+                let scroll = $(window).scrollTop();
+                if(scroll >= nav_offset_top){
+                    $('.header-menu .main-menu').addClass('navbar_fixed');
+                }else{
+                    $('.header-menu .main-menu').removeClass('navbar_fixed');
+                
+                }
+            })
         }
     }
+    navbarFixed();
 });

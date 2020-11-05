@@ -64,6 +64,17 @@ p.para {
   color: var(--primary-color);
   font: normal 500 16px/25px var(--roboto);
 }
+
+.navbar_fixed {
+  position: fixed;
+  width: 100%;
+  top: -1px;
+  left: 0;
+  right: 0;
+  box-shadow: var(--box-shadow);
+  z-index: 999;
+  transition: background 1s ease;
+}
 /* End Global Styles */
 
 /* css variables */
