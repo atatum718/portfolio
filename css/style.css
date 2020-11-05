@@ -1,0 +1,220 @@
+/* Global styles */
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* Buttons */
+.button {
+  padding: 0.8rem 2.2rem;
+  font: normal 500 16px/20px;
+  position: relative;
+  border: 3px solid transparent;
+  border-radius: 9px;
+}
+
+.button.primary-button {
+  background: var(--gradient-color2);
+  background-clip: padding-box;
+  color: whitesmoke;
+  transition: background 0.6s ease;
+  box-shadow: var(--box-shadow);
+}
+
+.button.primary-button:hover {
+  background: whitesmoke;
+  background-clip: padding-box;
+  color: black;
+}
+
+.button.primary-button::after,
+.button.secondary-button::after {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  background: var(--gradient-color2);
+  content: "";
+  z-index: -1;
+  border-radius: 9px;
+}
+
+.button.secondary-button {
+  background: white;
+  background-clip: padding-box;
+  transition: background 0.6s ease;
+}
+
+.button.secondary-button:hover {
+  background: var(--gradient-color2);
+  color: whitesmoke;
+  box-shadow: var(--box-shadow);
+}
+
+p.para {
+  color: var(--primary-color);
+  font: normal 500 16px/25px var(--roboto);
+}
+/* End Global Styles */
+
+/* css variables */
+:root {
+  --accent-color: #ffb6ad;
+  --primary-color: #71697a;
+  --accent-color2: #9ad5c8;
+  --text-color: #001b2eff;
+  --gradient-color: linear-gradient(90deg, #71697aff, #ffb6adff);
+  --gradient-color2: linear-gradient(90deg, #9ad5c8ff, #ffb6adff);
+
+  --shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
+  --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+
+  /* font family variables */
+  --roboto: "Roboto", sans-serif;
+}
+
+/* start navigation */
+.header-menu .main-menu .navbar .navbar-brand {
+  padding: 0 2rem 0 5rem;
+}
+
+.header-menu .main-menu .navbar {
+  padding: 1rem 5rem;
+}
+
+.header-menu .main-menu .navbar-nav .nav-link {
+  font-family: var(--roboto);
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 1.7rem;
+  color: var(--accent-color);
+}
+
+.header-menu .main-menu .navbar-nav,
+.active a {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.header-menu .main-menu .navbar-nav a:hover {
+  background: var(--accent-color2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+/* end navigation */
+
+/* Banner area */
+.site-main .site-banner .site-title h3 {
+  padding-top: 35%;
+  font-weight: 500;
+}
+
+.site-main.site-banner.site-title h1 {
+  font-size: 10rem;
+}
+.site-main .site-banner .site-title h4 {
+  font-size: 1.5rem;
+}
+
+.site-main .site-banner .site-title h3,
+h1,
+h4 {
+  color: var(--primary-color);
+}
+
+.site-main .site-banner .site-title h3::after {
+  content: "";
+  height: 2px;
+  width: 18vw;
+  background: var(--primary-color);
+  display: inline-block;
+  margin-left: 5%;
+  transform: translateY(-10px);
+}
+
+.site-main .site-banner .banner-image > img {
+  padding: 5em 0;
+  width: 20rem;
+}
+
+.title-text {
+  line-height: 1.5;
+}
+
+/* end banner area */
+
+/* Start about area */
+.site-main .about-title {
+  padding: 2rem 4rem;
+}
+
+.site-main .about-area .about-title h2 > span {
+  display: block;
+  letter-spacing: 21px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.site-main .about-area .about-title > p {
+  padding: 0.4rem;
+}
+/* end about area */
+
+/* Brand Area */
+.site-main .brand-area {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.site-main .brand-area {
+  display: flex;
+}
+.site-main .brand-area .container .col-sm-2 > .single-brand {
+  text-align: center;
+}
+.site-main .brand-area .container .col-sm-2 > .single-brand:hover {
+  box-shadow: var(--box-shadow);
+  transform: scale(1.1);
+}
+
+/* end Brand Area */
+
+/* Project Area */
+.site-main .project-area .container-fluid .col-sm-4 > .card:hover {
+  box-shadow: var(--box-shadow);
+  transform: scale(1.1);
+}
+
+.site-main .project-area .button-group button {
+  background: transparent;
+  border: none;
+  font: normal 500 16px/130px var(--roboto);
+  color: var(--accent-color2);
+  text-transform: uppercase;
+}
+
+.site-main .project-area .button-group button + button {
+  padding-left: 3rem;
+}
+
+button:focus,
+button:active,
+button :hover .btn:active,
+.btn .active {
+  outline: 0px !important;
+  box-shadow: none;
+}
+
+/* End project area */

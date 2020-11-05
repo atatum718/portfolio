@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+<!-- google fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" >
+    <!-- font-awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap css file -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- custom css file -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <!-- ==========================================Start Header Area============================== -->
+    <header class="header-menu">
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="mr-auto"></div>
+                  <div class="navbar-nav">
+                    <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Web Apps</a>
+                    <a class="nav-link" href="#">Videography</a>
+                    <a class="nav-link" href="#">Contact</a>
+
+                   
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+    <!-- ==========================================End Header Area================================ -->
+    <!-- ==========================================Start Main area================================-->
+    <main class="site-main">
+
+
+        <!-- ================================Banner ARea========================================== -->
+        <section class="site-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 site-title">
+                        <h3 class="title-text">Hi</h3>
+                        <h1 class="title-text text-uppercase">I'm Alecia</h1>
+                        <h4 class="title-text text-uppercase">UX Designer and Front End Developer</h4>
+                        <div class="site-buttons">
+                            <div class="d-flex flex-row flex-wrap">
+                                <button type="button" class="btn button primary-button mr-4 text-uppercase">About Me</button>
+                                <button type="button" class="btn button secondary-button text-uppercase">Resumè</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 banner-image">
+                        <img src="./img/slice1@3x.png" alt="banner-image" class="img-me">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ================================End Banner ARea========================================== -->
+        <section class="divider"></section>
+        <!-- ================================About Area=============================================== -->
+        <section class="about-area">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-image">
+                            <img src="./img/about-graphic.png" alt="coding image" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 about-title">
+                        <h2 class="text-uppercase pt-5">
+                            <span>Let me</span>
+                            <span>introduce</span>
+                            <span>myself</span>
+                        
+                        </h2>
+                        <div class="paragraph py-4 ">
+                            <p class="para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, debitis.
+                            </p>
+                            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dicta debitis a, blanditiis, aliquid, voluptate reiciendis maiores enim nisi consequatur delectus corrupti est numquam rem. Animi voluptate dolor officia et!</p>
+                        </div>
+                        <button type="button" class="btn button primary-button text-uppercase">See my work</button>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+        
+        <!-- ================================End About Area=============================================== -->
+        <!-- ================================Brand Area=================================================== -->
+        <section class="bg-light  brand-area">
+            <div class="container-fluid">
+                <div class="d-flex container">
+                    <div class="col-sm-2">
+                        <div class="single-brand ">
+                            <img class="img-fluid " src="./img/1.png" alt="javascript">
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="single-brand ">
+                            <img class="img-fluid" src="./img/html.png" alt="HTML">
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="single-brand ">
+                            <img class="img-fluid" src="./img/css3.png" alt="css">
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="single-brand ">
+                            <img class="img-fluid" src="./img/react.png" alt="react">
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="single-brand  ">
+                            <img class="img-fluid" src="./img/bootstrap.png" alt="bootstrap">
+                        </div>                          
+                    </div>
+
+                </div>                   
+            </div>          
+        </section>
+
+        <!-- ================================End Brand Area=============================================== -->
+        <!-- ================================Project Area================================================= -->
+        <section class="project-area">
+            <div class="container-fluid">
+                <div class="button-group container">
+                    <button type="button" class="active" data-filter="*">All</button>
+                    <button type="button" data-filter=".new">New</button>
+                    <button type="button" data-filter=".current">Current</button>
+                    <button type="button" data-filter=".upcoming">Upcoming</button>
+                </div>
+
+                <div class="d-flex flex-row grid">
+                    <div class="col-sm-4 new">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="./img/pewter-UI-cover.jpg" alt="Rooted mobile app">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Rooted Mobile App</h5>
+                                <p class="card-text">A vegan food app that offers recipes, restaurant suggestions and tips on becoming vegan.</p>
+                                <a href="#" class="btn button primary-button text-uppercase">View Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 current">
+
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="./img/UI-design-cover.jpg" alt="Rooted mobile app">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Rooted Mobile App</h5>
+                                <p class="card-text">A vegan food app that offers recipes, restaurant suggestions and tips on becoming vegan.</p>
+                                <a href="#" class="btn button primary-button text-uppercase">View Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 upcoming">
+
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="./img/UI-design-cover.jpg" alt="Rooted mobile app">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Rooted Mobile App</h5>
+                                <p class="card-text">A vegan food app that offers recipes, restaurant suggestions and tips on becoming vegan.</p>
+                                <a href="#" class="btn button primary-button text-uppercase">View Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================================end Project Area============================================= -->
+
+    </main>
+
+    <!-- ==========================================End Main area================================-->
+    <footer>
+        <!-- =============================================footer Area===================================-->
+        <p class="attribution"><a href='https://www.freepik.com/vectors/people'>People vector created by pch.vector - www.freepik.com</a></p>
+        <p class="attribution"><a href="https://www.freepik.com/vectors/abstract">Abstract vector created by macrovector - www.freepik.com</a></p>
+        <!-- ==============================================End footer area==============================-->
+        
+    </footer>
+
+    <!-- jquery js file -->
+    <script src="./js/jquery3.5.1.js"></script>
+    <!--boostrap js file  -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- isotope js library -->
+    <script src="./filter-buttons/isotope.js"></script>
+    <!-- custom js file -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
