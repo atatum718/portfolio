@@ -39,3 +39,16 @@ img {
 .mockup {
   width: 33%;
 }
+
+ul {
+  list-style: none;
+}
+ul li::before {
+  content: "\2022";
+  color: #ffb6ad;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
