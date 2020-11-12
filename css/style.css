@@ -118,6 +118,11 @@ h4 {
   padding-left: 3rem;
 }
 
+.site-main .project-area .card-buttons a {
+  width: 55%;
+  flex-direction: row;
+}
+
 button:focus,
 button:active,
 button :hover .btn:active,
@@ -127,3 +132,9 @@ button :hover .btn:active,
 }
 
 /* End project area */
+
+/* footer area */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
