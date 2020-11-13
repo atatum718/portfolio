@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Videography</title>
+    <title>Contact</title>
     
     
     <!-- google fonts -->
@@ -23,6 +23,9 @@
     <!-- responsive css file -->
     <link rel="stylesheet" href="./css/responsive.css">
 
+    <!-- chatbot -->
+    <link rel="stylesheet" href="dist/jquery.convform.css">
+
 </head>
 <body>
     <!-- ====================================navigation============================= -->
@@ -39,8 +42,8 @@
                     <a class="nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-link " href="aboutme.html">About</a>
                     <a class="nav-link" href="/index.html#project_area">Web Apps</a>
-                    <a class="nav-link active" href="#">Videography</a>
-                    <a class="nav-link" href="contactUs.html">Contact</a>
+                    <a class="nav-link " href="videographyPage.html">Videography</a>
+                    <a class="nav-link active" href="#">Contact</a>
 
                    
                   </div>
@@ -49,38 +52,10 @@
         </div>
     </header>
     <!-- ==========================================Start Main area================================-->
-    <section class="Videography">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12  py-5">
-                    <div class="embed-responsive embed-responsive-21by9 mt-4 py-3">
-                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/231595672" ></iframe>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 py-5">
-                    <p class="paragraph-text py-5">
-                        This is a pilot episode to a series I started producing about a mother and daughter duo that 
-                        become homeless and try to maintain their lifestyle. The show covers gentrification, high rents in NYC, a bond between mother and daughter and how so many people try to live beyond their means while being a paycheck away from being homeless.
-                        My role on this project was creator, writer, actress.
-                    </p>
-                </div>
-                <div class="col-lg-6 col-md-12  py-5">
-                    <div class="embed-responsive embed-responsive-21by9 mt-4 py-3">
-                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/243956161" ></iframe>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 py-5">
-                    <p class="paragraph-text py-5">
-                        This commercial was for a company that packs and ships goods to loved ones that are incarcerated.
-                        The premise was to compare the long process of going shopping, waiting in line to ship items off 
-                        versus simply ordering online saving a lot of time.
-                        My role on this project was casting, and directing.
-                    </p>
-                </div>
-                
-            </div>
+    <section class="contact">
+        <div>
+            <input type="text" name="name" conv-question="How are you today?">
         </div>
-        
         
     </section>
 
@@ -100,6 +75,9 @@
     <script src="./filter-buttons/isotope.js"></script>
     <!-- custom js file -->
     <script src="./js/main.js"></script>
+    <!-- chat bot -->
+    <script src="//code.tidio.co/6rf6vh3u1xdtmzhnoabzmpetf3egbpbw.js" async></script>
+
     
 </body>
 </html>
