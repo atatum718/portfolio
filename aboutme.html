@@ -40,7 +40,7 @@
                     <a class="nav-link active" href="#">About</a>
                     <a class="nav-link" href="/index.html#project_area">Web Apps</a>
                     <a class="nav-link" href="videographyPage.html">Videography</a>
-                    <a class="nav-link" href="contactUs.html">Contact</a>
+                    <button class-"nav-link" onclick="chatShow()"> Contact </button>
 
                    
                   </div>
@@ -102,6 +102,14 @@
     <script src="./filter-buttons/isotope.js"></script>
     <!-- custom js file -->
     <script src="./js/main.js"></script>
+      <!-- chat bot -->
+      <script src="//code.tidio.co/6rf6vh3u1xdtmzhnoabzmpetf3egbpbw.js" async></script>
+      <script>
+          function chatShow() {
+          window.tidioChatApi.show();
+          window.tidioChatApi.open();
+          }
+      </script>
     
 </body>
 </html>
