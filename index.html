@@ -6,6 +6,9 @@
     <title>Portfolio Website</title>
 <!-- google fonts -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" >
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" >
 
     <!-- font-awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,6 +18,7 @@
     
     <!-- custom css file -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/globalStyles.css">
 
     <!-- responsive css file -->
     <link rel="stylesheet" href="./css/responsive.css">
@@ -33,8 +37,8 @@
                     <div class="mr-auto"></div>
                   <div class="navbar-nav">
                     <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-link" href="#">About</a>
-                    <a class="nav-link" href="#">Web Apps</a>
+                    <a class="nav-link" href="aboutme.html">About</a>
+                    <a class="nav-link" href="#project_area">Web Apps</a>
                     <a class="nav-link" href="#">Videography</a>
                     <a class="nav-link" href="#">Contact</a>
 
@@ -59,13 +63,13 @@
                         <h4 class="title-text text-uppercase">UX Designer and Front End Developer</h4>
                         <div class="site-buttons">
                             <div class="d-flex flex-row flex-wrap">
-                                <button type="button" class="btn button primary-button mr-4 text-uppercase">About Me</button>
+                                <a href="/aboutme.html" type="button" class="btn button primary-button mr-4 text-uppercase">About Me</a>
                                 <a href="./assets/Alecia-Tatum-UX-resumé-2020.pdf" type="button" class="btn button secondary-button text-uppercase">Resumè</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 banner-image">
-                        <img src="./img/slice1@3x.png" alt="banner-image" class="img-me">
+                        <img src="./img/optimized-change-color-removebg.jpg" alt="banner-image" class="img-me">
                     </div>
 
                 </div>
@@ -91,12 +95,12 @@
                         
                         </h2>
                         <div class="paragraph py-4 ">
-                            <p class="para">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, debitis.
+                            <p class="paragraph-text">
+                                A  UX Engineer, a Filmmaker and all-around Creative.  I’m passionate about creating Visual Content. I’ve been in Production for several years.  As a UX Engineer I use React.js, JavaScript, CSS and HTML5. When working in collaboration projects I use Slack and Figma. 
                             </p>
-                            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dicta debitis a, blanditiis, aliquid, voluptate reiciendis maiores enim nisi consequatur delectus corrupti est numquam rem. Animi voluptate dolor officia et!</p>
+                           
                         </div>
-                        <button type="button" class="btn button primary-button text-uppercase">See my work</button>
+                        <a href="#project_area" type="button" class="btn button primary-button text-uppercase">See my work</a>
                     </div>
                 </div>
             
@@ -140,7 +144,7 @@
 
         <!-- ================================End Brand Area=============================================== -->
         <!-- ================================Project Area================================================= -->
-        <section class="project-area">
+        <section class="project-area" id="project_area">
             <div class="container-fluid">
                 <div class="button-group container">
                     <button type="button" class="active" data-filter="*">All</button>
@@ -152,33 +156,36 @@
                 <div class="d-flex flex-row grid container">
                     <div class="col-sm-4 new">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="./img/pewter-UI-cover.jpg" alt="Rooted mobile app">
+                            <img class="card-img-top" src="./img/optimized-case-study-img.jpg" alt="Rooted mobile app">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Rooted Mobile App</h5>
                                 <p class="card-text">A vegan food app that offers recipes, restaurant suggestions and tips on becoming vegan.</p>
-                                <a href="#" class="btn button primary-button text-uppercase">View Case Study</a>
+                                <a href="caseStudy.html" class="btn button primary-button text-uppercase">View Case Study</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4 current">
 
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="./img/UI-design-cover.jpg" alt="Rooted mobile app">
+                            <img class="card-img-top" src="./img/landingPg-display.jpg" alt="Boutique Landing page">
                             <div class="card-body text-center">
-                                <h5 class="card-title">Rooted Mobile App</h5>
-                                <p class="card-text">A vegan food app that offers recipes, restaurant suggestions and tips on becoming vegan.</p>
-                                <a href="#" class="btn button primary-button text-uppercase">View Case Study</a>
+                                <h5 class="card-title">Boutique Landing Page</h5>
+                                <p class="card-text">An email capture landing page for an upcoming boutique.</p>
+                                <div class="d-flex flex-row  card-buttons">
+                                    <a href="https://boutique-coming-soon-master.vercel.app/" type="button" class="btn button primary-button btn-sm text-uppercase ">Live Site</a>
+                                    <a href="https://github.com/atatum718/base-apparel-coming-soon-master" type="button" class="btn button secondary-button btn-sm text-uppercase ">Github</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4 upcoming">
 
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="./img/UI-design-cover.jpg" alt="Rooted mobile app">
+                            <img class="card-img-top" src="./img/portfolio-cover-img.jpg" alt="portfolio site image">
                             <div class="card-body text-center">
-                                <h5 class="card-title">Rooted Mobile App</h5>
-                                <p class="card-text">A vegan food app that offers recipes, restaurant suggestions and tips on becoming vegan.</p>
-                                <a href="#" class="btn button primary-button text-uppercase">View Case Study</a>
+                                <h5 class="card-title">My Portfolio Site</h5>
+                                <p class="card-text">Personal website showcasing web apps I worked on as well as my resumè and videography work.</p>
+                                <a href="https://github.com/atatum718/portfolio-site" class="btn button primary-button text-uppercase">Github</a>
                             </div>
                         </div>
                     </div>

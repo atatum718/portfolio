@@ -1,80 +1,5 @@
 /* Global styles */
 
-body {
-  margin: 0;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  font-family: "Roboto", sans-serif;
-}
-
-.text-uppercase {
-  text-transform: uppercase;
-}
-
-/* Buttons */
-.button {
-  padding: 0.8rem 2.2rem;
-  font: normal 500 16px/20px;
-  position: relative;
-  border: 3px solid transparent;
-  border-radius: 9px;
-}
-
-.button.primary-button {
-  background: var(--gradient-color2);
-  background-clip: padding-box;
-  color: whitesmoke;
-  transition: background 0.6s ease;
-  box-shadow: var(--box-shadow);
-}
-
-.button.primary-button:hover {
-  background: whitesmoke;
-  background-clip: padding-box;
-  color: black;
-}
-
-.button.primary-button::after,
-.button.secondary-button::after {
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  bottom: -2px;
-  right: -2px;
-  background: var(--gradient-color2);
-  content: "";
-  z-index: -1;
-  border-radius: 9px;
-}
-
-.button.secondary-button {
-  background: white;
-  background-clip: padding-box;
-  transition: background 0.6s ease;
-}
-
-.button.secondary-button:hover {
-  background: var(--gradient-color2);
-  color: whitesmoke;
-  box-shadow: var(--box-shadow);
-}
-
-p.para {
-  color: var(--primary-color);
-  font: normal 500 16px/25px var(--roboto);
-}
-
-.navbar_fixed {
-  position: fixed;
-  width: 100%;
-  top: -1px;
-  left: 0;
-  right: 0;
-  box-shadow: var(--box-shadow);
-  z-index: 999;
-  transition: background 1s ease;
-}
 /* End Global Styles */
 
 /* css variables */
@@ -91,39 +16,12 @@ p.para {
 
   /* font family variables */
   --roboto: "Roboto", sans-serif;
+  --accent-font: "Aguafina Script", cursive;
+  --raleway: "Raleway", sans-serif;
 }
 
 /* start navigation */
-.header-menu .main-menu .navbar .navbar-brand {
-  padding: 0 2rem 0 5rem;
-}
 
-.header-menu .main-menu .navbar {
-  padding: 1rem 5rem;
-}
-
-.header-menu .main-menu .navbar-nav .nav-link {
-  font-family: var(--roboto);
-  text-transform: uppercase;
-  font-weight: 500;
-  padding: 1.7rem;
-  color: var(--accent-color);
-}
-
-.header-menu .main-menu .navbar-nav,
-.active a {
-  background: var(--gradient-color);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.header-menu .main-menu .navbar-nav a:hover {
-  background: var(--accent-color2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
 /* end navigation */
 
 /* Banner area */
@@ -132,8 +30,9 @@ p.para {
   font-weight: 500;
 }
 
-.site-main.site-banner.site-title h1 {
-  font-size: 10rem;
+.site-main .site-banner .site-title h1 {
+  font-size: 3em;
+  font-family: var(--accent-font);
 }
 .site-main .site-banner .site-title h4 {
   font-size: 1.5rem;
@@ -146,7 +45,7 @@ h4 {
 }
 
 .site-main .site-banner .site-title h3::after {
-  content: "";
+  /* content: ""; */
   height: 2px;
   width: 18vw;
   background: var(--primary-color);
@@ -176,10 +75,12 @@ h4 {
   letter-spacing: 21px;
   font-weight: bold;
   color: var(--primary-color);
+  font-family: var(--raleway);
 }
 
 .site-main .about-area .about-title > p {
   padding: 0.4rem;
+  font-family: var(--raleway);
 }
 /* end about area */
 
@@ -220,6 +121,11 @@ h4 {
   padding-left: 3rem;
 }
 
+.site-main .project-area .card-buttons a {
+  width: 55%;
+  flex-direction: row;
+}
+
 button:focus,
 button:active,
 button :hover .btn:active,
@@ -229,3 +135,9 @@ button :hover .btn:active,
 }
 
 /* End project area */
+
+/* footer area */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
