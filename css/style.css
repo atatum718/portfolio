@@ -17,6 +17,7 @@
   /* font family variables */
   --roboto: "Roboto", sans-serif;
   --accent-font: "Aguafina Script", cursive;
+  --raleway: "Raleway", sans-serif;
 }
 
 /* start navigation */
@@ -74,10 +75,12 @@ h4 {
   letter-spacing: 21px;
   font-weight: bold;
   color: var(--primary-color);
+  font-family: var(--raleway);
 }
 
 .site-main .about-area .about-title > p {
   padding: 0.4rem;
+  font-family: var(--raleway);
 }
 /* end about area */
 

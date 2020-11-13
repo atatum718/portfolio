@@ -1,0 +1,24 @@
+:root {
+  --raleway: "Raleway", sans-serif;
+}
+
+body {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+span {
+  font-weight: 600;
+  font-size: 40px;
+  color: #ffb6ad;
+  font-family: var(--raleway);
+}
+
+img {
+  width: 100%;
+}
+
+.paragraph-text {
+  font-family: var(--raleway);
+  line-height: 2;
+}
