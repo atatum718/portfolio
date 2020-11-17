@@ -82,6 +82,7 @@ body {
   background: white;
   background-clip: padding-box;
   transition: background 0.6s ease;
+  -webkit-appearance: initial !important;
 }
 
 .button.secondary-button:hover {
