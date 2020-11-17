@@ -29,7 +29,7 @@ body {
 .header-menu .main-menu .navbar-nav,
 .active a {
   background-color: #71697a;
-  background-image: linear-gradient(55 deg, #71697a, #ffb6ad);
+  /* background-image: linear-gradient(55 deg, #71697a, #ffb6ad); */
   background-image: conic-gradient(#71697a, #ffb6ad);
   background-size: 100%;
   -webkit-background-clip: text;
