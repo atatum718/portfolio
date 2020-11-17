@@ -52,6 +52,7 @@ body {
 
 .button.primary-button {
   background: var(--gradient-color2);
+  -webkit-appearance: initial !important;
   background-clip: padding-box;
   color: whitesmoke;
   transition: background 0.6s ease;
