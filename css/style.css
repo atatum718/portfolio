@@ -96,7 +96,7 @@ h4 {
 .site-main .brand-area .container .col-sm-2 > .single-brand {
   text-align: center;
 }
-/* .site-main .brand-area .container .col-sm-2 > .single-brand:hover {
+/* .site-main .brand-area .container-fluid .container .col-sm-2 > .single-brand:hover {
   box-shadow: var(--box-shadow);
   transform: scale(1.1);
 } */
