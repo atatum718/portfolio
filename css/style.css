@@ -98,7 +98,7 @@ h4 {
 }
 .site-main .brand-area .container .col-sm-2 > .single-brand:hover {
   box-shadow: var(--box-shadow);
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
 }
 
 /* end Brand Area */
