@@ -52,6 +52,11 @@ body {
   background-clip: text;
 }
 
+/* Homepage Cards */
+.embed-responsive .card-img-top {
+  object-fit: cover;
+}
+
 /* Buttons */
 .button {
   padding: 0.8rem 2.2rem;
