@@ -53,9 +53,10 @@ body {
 }
 
 /* Homepage Cards */
-.embed-responsive .card-img-top {
+/*.embed-responsive .card-img-top {
   object-fit: cover;
 }
+
 
 /* Buttons */
 .button {
