@@ -126,6 +126,10 @@ h4 {
   flex-direction: row;
 }
 
+.site-main .project-area .embed-responsive .card-img-top {
+  object-fit: cover;
+}
+
 button:focus,
 button:active,
 button :hover .btn:active,
