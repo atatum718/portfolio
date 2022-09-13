@@ -7,4 +7,6 @@
     box-sizing: border-box;
   }
 
-  
+  img {
+      width: 100%;
+  }
