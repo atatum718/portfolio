@@ -12,3 +12,7 @@
     color: #ffb6ad;
     font-family: var(--raleway); 
   }
+
+  img {
+      transform: scale(0.5);
+  }
