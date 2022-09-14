@@ -13,10 +13,10 @@
     font-family: var(--raleway); 
   }
 
-  .scaled {
-      /* -ms-transform: scale(0.5);
+  /* .scaled {
+      -ms-transform: scale(0.5);
       -webkit-transform: scale(0.5);
       -o-transform: scale(0.5);
-      -moz-transform: scale(0.5); */
+      -moz-transform: scale(0.5);
       transform: scale(0.5);
-  }
+  } */
